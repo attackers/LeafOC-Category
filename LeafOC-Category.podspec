@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-添加字符串的一些验证，添加字典模型互转
+			添加字符串的一些验证，添加字典模型互转
                    DESC
 
   s.homepage     = "https://github.com/attackers"
@@ -119,7 +119,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+   s.frameworks = "UIKit", "CommonCrypto"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"

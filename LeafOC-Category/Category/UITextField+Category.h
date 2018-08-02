@@ -29,15 +29,6 @@
 - (void)textFieldShowRightview:(NSString*)text  ShowImg:(UIImage*)img RightviewBound:(CGRect)rect;
 
 /**
- 只显示带文字的左边视图
-
- @param content 文字的内容
- @param rect textfield的Rect,主要用来设置文子展示的高度
- @return 返回要展示的视图
- */
-- (UILabel*)textFieldLeftView:(NSString*)content ViewFrame:(CGRect)rect;
-
-/**
  只显示带文字的右边视图，
  @param content 文字的内容
  @param lStg 左边的文字内容，主要用来计算左边的宽度，用以做右边视图的x坐标

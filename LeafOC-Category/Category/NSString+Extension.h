@@ -53,10 +53,7 @@
  * 去除末尾的0
  */
 - (NSString *)deleteTailZero;
-/**
- *  末尾补0
- */
-- (NSString *)addTailZero;
+
 /**
  *  md5
  *

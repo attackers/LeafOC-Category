@@ -9,7 +9,7 @@
 #import "NSString+Extension.h"
 #import <UIKit/UIKit.h>
 #import <CommonCrypto/CommonCrypto.h>
-#import<CommonCrypto/CommonDigest.h>
+#import <CommonCrypto/CommonDigest.h>
 
 @implementation NSString (Extension)
 

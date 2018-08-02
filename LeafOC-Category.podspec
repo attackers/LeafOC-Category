@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LeafOC-Category"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "主要集成了一些类型的扩展方法"
 
   # This description is used to generate tags and improve search results.
@@ -81,7 +81,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source  = { :git => "https://github.com/attackers/LeafOC-Category.git", :tag => "#{s.version}" }
+  s.source  = { :git => "https://github.com/attackers/LeafOC-Category.git", :tag => "{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -119,7 +119,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-   s.frameworks = "UIKit", "CommonCrypto"
+   s.frameworks = "UIKit", "CommonCrypto","Foundation","objc"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"

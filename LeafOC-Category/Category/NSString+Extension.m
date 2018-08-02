@@ -8,8 +8,8 @@
 
 #import "NSString+Extension.h"
 #import <UIKit/UIKit.h>
-#import <CommonCrypto/CommonCrypto.h>
-#import <CommonCrypto/CommonDigest.h>
+//#import <CommonCrypto/CommonCrypto.h>
+//#import <CommonCrypto/CommonDigest.h>
 
 @implementation NSString (Extension)
 
@@ -119,24 +119,24 @@
 }
 
 
-/**
- *  MD5加密
- */
-- (NSString *)md5
-{
-    const char *cStr = [self UTF8String];
-    unsigned char result[CC_MD5_DIGEST_LENGTH];
-    
-    CC_MD5(cStr, strlen(cStr), result);
-    
-    NSMutableString *resultString = [NSMutableString string];
-    
-    for (int i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
-        [resultString appendFormat:@"%02X",result[i]];
-    }
-    return resultString;
-    
-}
+///**
+// *  MD5加密
+// */
+//- (NSString *)md5
+//{
+//    const char *cStr = [self UTF8String];
+//    unsigned char result[CC_MD5_DIGEST_LENGTH];
+//    
+//    CC_MD5(cStr, strlen(cStr), result);
+//    
+//    NSMutableString *resultString = [NSMutableString string];
+//    
+//    for (int i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
+//        [resultString appendFormat:@"%02X",result[i]];
+//    }
+//    return resultString;
+//    
+//}
 
 
 - (NSString *)timeStrWithFormart:(NSString *)formart
@@ -246,22 +246,22 @@
     }
 }
 
-- (NSString *)sha1
-{
-    NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
-    
-    uint8_t digest[CC_SHA1_DIGEST_LENGTH];
-    
-    CC_SHA1(data.bytes, (unsigned int)data.length, digest);
-    
-    NSMutableString *output = [NSMutableString stringWithCapacity:CC_SHA1_DIGEST_LENGTH * 2];
-    
-    for(int i=0; i<CC_SHA1_DIGEST_LENGTH; i++) {
-        [output appendFormat:@"%02x", digest[i]];
-    }
-    
-    return output;
-}
+//- (NSString *)sha1
+//{
+//    NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
+//
+//    uint8_t digest[CC_SHA1_DIGEST_LENGTH];
+//
+//    CC_SHA1(data.bytes, (unsigned int)data.length, digest);
+//
+//    NSMutableString *output = [NSMutableString stringWithCapacity:CC_SHA1_DIGEST_LENGTH * 2];
+//
+//    for(int i=0; i<CC_SHA1_DIGEST_LENGTH; i++) {
+//        [output appendFormat:@"%02x", digest[i]];
+//    }
+//
+//    return output;
+//}
 
 -(NSDictionary*)tranformStringToDictionary{
     NSArray *array = [self componentsSeparatedByString:@"?"];

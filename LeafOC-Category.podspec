@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "LeafOC-Category"
   s.version      = "0.0.1"
-  s.summary      = "A short description of LeafOC-Category."
+  s.summary      = "主要集成了一些类型的扩展方法"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,10 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+添加字符串的一些验证，添加字典模型互转
                    DESC
 
-  s.homepage     = "https://github.com/attackers/LeafOC-Category.git"
+  s.homepage     = "https://github.com/attackers"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -40,7 +41,7 @@ Pod::Spec.new do |s|
 
   #s.license      = "MIT (example)"
   
-	 s.license      = { :type => "MIT", :file => "LICENSE" }
+   s.license = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -80,7 +81,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/LeafOC-Category.git", :tag => "#{s.version}" }
+  s.source  = { :git => "https://github.com/attackers/LeafOC-Category.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

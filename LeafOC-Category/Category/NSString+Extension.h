@@ -54,12 +54,12 @@
  */
 - (NSString *)deleteTailZero;
 
-///**
-// *  md5
-// *
-// *  @return md5的字符串
-// */
-//- (NSString *)md5;
+/**
+ *  md5
+ *
+ *  @return md5的字符串
+ */
+- (NSString *)md5;
 /**
  * 判断是否为整数
  */
@@ -104,8 +104,8 @@
 
 //判断密码是否合法
 -(BOOL)isValidPassWord;
-////sha1加密
-//- (NSString *)sha1;
+//sha1加密
+- (NSString *)sha1;
 
 //键值对转字典,形如下面的字符串
 /*

@@ -13,9 +13,16 @@
 		58474A0F2112B787001A89B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58474A0E2112B787001A89B2 /* Assets.xcassets */; };
 		58474A122112B787001A89B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58474A102112B787001A89B2 /* LaunchScreen.storyboard */; };
 		58474A152112B787001A89B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58474A142112B787001A89B2 /* main.m */; };
+		58474A242112B795001A89B2 /* NSDictionary+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 58474A1D2112B794001A89B2 /* NSDictionary+Category.m */; };
+		58474A252112B795001A89B2 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 58474A1F2112B794001A89B2 /* NSString+Extension.m */; };
+		58474A262112B795001A89B2 /* UITextField+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 58474A212112B794001A89B2 /* UITextField+Category.m */; };
+		58474A272112B795001A89B2 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 58474A232112B794001A89B2 /* UIView+Extension.m */; };
+		9D112CDCF854AD5F7F1F8A66 /* libPods-LeafOC-Category.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AD5FB3357C1C6A37472A91 /* libPods-LeafOC-Category.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		047F5C74505DB499DFA4CE47 /* Pods-LeafOC-Category.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeafOC-Category.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeafOC-Category/Pods-LeafOC-Category.debug.xcconfig"; sourceTree = "<group>"; };
+		3558CA794D037B72E080A626 /* Pods-LeafOC-Category.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeafOC-Category.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeafOC-Category/Pods-LeafOC-Category.release.xcconfig"; sourceTree = "<group>"; };
 		58474A022112B784001A89B2 /* LeafOC-Category.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LeafOC-Category.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58474A052112B784001A89B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		58474A062112B784001A89B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +33,15 @@
 		58474A112112B787001A89B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58474A132112B787001A89B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58474A142112B787001A89B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58474A1C2112B794001A89B2 /* NSDictionary+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Category.h"; sourceTree = "<group>"; };
+		58474A1D2112B794001A89B2 /* NSDictionary+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Category.m"; sourceTree = "<group>"; };
+		58474A1E2112B794001A89B2 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		58474A1F2112B794001A89B2 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		58474A202112B794001A89B2 /* UITextField+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Category.h"; sourceTree = "<group>"; };
+		58474A212112B794001A89B2 /* UITextField+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Category.m"; sourceTree = "<group>"; };
+		58474A222112B794001A89B2 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		58474A232112B794001A89B2 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		F2AD5FB3357C1C6A37472A91 /* libPods-LeafOC-Category.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LeafOC-Category.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D112CDCF854AD5F7F1F8A66 /* libPods-LeafOC-Category.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185CB6A94A83DF2CA7D82BBB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				047F5C74505DB499DFA4CE47 /* Pods-LeafOC-Category.debug.xcconfig */,
+				3558CA794D037B72E080A626 /* Pods-LeafOC-Category.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		39B6A0F14C3F2A048F8D099F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2AD5FB3357C1C6A37472A91 /* libPods-LeafOC-Category.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		584749F92112B784001A89B2 = {
 			isa = PBXGroup;
 			children = (
 				58474A042112B784001A89B2 /* LeafOC-Category */,
 				58474A032112B784001A89B2 /* Products */,
+				185CB6A94A83DF2CA7D82BBB /* Pods */,
+				39B6A0F14C3F2A048F8D099F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +94,7 @@
 		58474A042112B784001A89B2 /* LeafOC-Category */ = {
 			isa = PBXGroup;
 			children = (
+				58474A1B2112B794001A89B2 /* Category */,
 				58474A052112B784001A89B2 /* AppDelegate.h */,
 				58474A062112B784001A89B2 /* AppDelegate.m */,
 				58474A082112B784001A89B2 /* ViewController.h */,
@@ -71,6 +108,21 @@
 			path = "LeafOC-Category";
 			sourceTree = "<group>";
 		};
+		58474A1B2112B794001A89B2 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				58474A1C2112B794001A89B2 /* NSDictionary+Category.h */,
+				58474A1D2112B794001A89B2 /* NSDictionary+Category.m */,
+				58474A1E2112B794001A89B2 /* NSString+Extension.h */,
+				58474A1F2112B794001A89B2 /* NSString+Extension.m */,
+				58474A202112B794001A89B2 /* UITextField+Category.h */,
+				58474A212112B794001A89B2 /* UITextField+Category.m */,
+				58474A222112B794001A89B2 /* UIView+Extension.h */,
+				58474A232112B794001A89B2 /* UIView+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +130,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58474A182112B787001A89B2 /* Build configuration list for PBXNativeTarget "LeafOC-Category" */;
 			buildPhases = (
+				22293CE845305A47636BBDEC /* [CP] Check Pods Manifest.lock */,
 				584749FE2112B784001A89B2 /* Sources */,
 				584749FF2112B784001A89B2 /* Frameworks */,
 				58474A002112B784001A89B2 /* Resources */,
@@ -136,14 +189,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		22293CE845305A47636BBDEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LeafOC-Category-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		584749FE2112B784001A89B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58474A252112B795001A89B2 /* NSString+Extension.m in Sources */,
 				58474A0A2112B784001A89B2 /* ViewController.m in Sources */,
 				58474A152112B787001A89B2 /* main.m in Sources */,
+				58474A272112B795001A89B2 /* UIView+Extension.m in Sources */,
+				58474A242112B795001A89B2 /* NSDictionary+Category.m in Sources */,
 				58474A072112B784001A89B2 /* AppDelegate.m in Sources */,
+				58474A262112B795001A89B2 /* UITextField+Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,14 +359,12 @@
 		};
 		58474A192112B787001A89B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 047F5C74505DB499DFA4CE47 /* Pods-LeafOC-Category.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "LeafOC-Category/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leaf.LeafOC-Category";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,14 +373,12 @@
 		};
 		58474A1A2112B787001A89B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3558CA794D037B72E080A626 /* Pods-LeafOC-Category.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "LeafOC-Category/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leaf.LeafOC-Category";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

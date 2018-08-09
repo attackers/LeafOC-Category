@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LeafOC-Category"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "主要集成了一些类型的扩展方法"
 
   # This description is used to generate tags and improve search results.

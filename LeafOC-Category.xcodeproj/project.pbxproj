@@ -17,6 +17,7 @@
 		58474A252112B795001A89B2 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 58474A1F2112B794001A89B2 /* NSString+Extension.m */; };
 		58474A262112B795001A89B2 /* UITextField+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 58474A212112B794001A89B2 /* UITextField+Category.m */; };
 		58474A272112B795001A89B2 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 58474A232112B794001A89B2 /* UIView+Extension.m */; };
+		588D2BDC211C18E900AE677B /* NSObject+CustomDateFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 588D2BDB211C18E900AE677B /* NSObject+CustomDateFunction.m */; };
 		9D112CDCF854AD5F7F1F8A66 /* libPods-LeafOC-Category.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AD5FB3357C1C6A37472A91 /* libPods-LeafOC-Category.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,8 @@
 		58474A212112B794001A89B2 /* UITextField+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Category.m"; sourceTree = "<group>"; };
 		58474A222112B794001A89B2 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		58474A232112B794001A89B2 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		588D2BDA211C18E900AE677B /* NSObject+CustomDateFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CustomDateFunction.h"; sourceTree = "<group>"; };
+		588D2BDB211C18E900AE677B /* NSObject+CustomDateFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CustomDateFunction.m"; sourceTree = "<group>"; };
 		F2AD5FB3357C1C6A37472A91 /* libPods-LeafOC-Category.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LeafOC-Category.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -119,6 +122,8 @@
 				58474A212112B794001A89B2 /* UITextField+Category.m */,
 				58474A222112B794001A89B2 /* UIView+Extension.h */,
 				58474A232112B794001A89B2 /* UIView+Extension.m */,
+				588D2BDA211C18E900AE677B /* NSObject+CustomDateFunction.h */,
+				588D2BDB211C18E900AE677B /* NSObject+CustomDateFunction.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 			files = (
 				58474A252112B795001A89B2 /* NSString+Extension.m in Sources */,
 				58474A0A2112B784001A89B2 /* ViewController.m in Sources */,
+				588D2BDC211C18E900AE677B /* NSObject+CustomDateFunction.m in Sources */,
 				58474A152112B787001A89B2 /* main.m in Sources */,
 				58474A272112B795001A89B2 /* UIView+Extension.m in Sources */,
 				58474A242112B795001A89B2 /* NSDictionary+Category.m in Sources */,
@@ -364,7 +370,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "LeafOC-Category/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leaf.LeafOC-Category";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -378,7 +387,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "LeafOC-Category/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leaf.LeafOC-Category";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
